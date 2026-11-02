@@ -8,7 +8,11 @@ app_license = "mit"
 # Apps
 # ------------------
 
-# required_apps = []
+required_apps = ["india_banking_connector"]
+
+extend_doctype_class = {
+	"ICICI Connector": ["btbanking.overrides.icici_connector.ICICIHybridMixin"],
+}
 
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [

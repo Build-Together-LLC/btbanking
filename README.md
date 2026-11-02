@@ -2,14 +2,17 @@
 
 Bank API integrations for ERPNext (ICICI statement sync)
 
+Includes an ICICI Registration Status hybrid-encryption extension for India Banking
+Connector v16. See [changes, configuration and validation](docs/icici-registration-hybrid.md).
+
 ### Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch mit
-bench install-app btbanking
+bench get-app https://github.com/Build-Together-LLC/btbanking --branch Bt
+bench --site your-site install-app btbanking
 ```
 
 ### Contributing
